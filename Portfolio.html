@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Daniel Candamil | Mechanical Engineering Portfolio</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts: Inter, Newsreader, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clay: {
+              50: '#FAF8F5',
+              100: '#F5EFEB',
+              200: '#EBE2DA',
+              300: '#DCCEC2',
+              600: '#8A7A6D',
+              800: '#3D352E',
+              900: '#1F1A16',
+            },
+            accent: {
+              DEFAULT: '#C15F3D',
+              hover: '#A94E2F',
+              soft: '#F4ECE6'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Newsreader', 'serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    ::selection {
+      background-color: #F4ECE6;
+      color: #C15F3D;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      font-family: 'JetBrains Mono', monospace;
+      border: 1px solid rgba(220, 206, 194, 0.75);
+      background: #FAF8F5;
+      color: #3D352E;
+      transition: all 0.2s ease;
+    }
+    .schematic-grid {
+      background-color: #161e2e;
+      background-image: 
+        linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+  </style>
+</head>
+
+<body class="bg-clay-50 text-clay-900 font-sans antialiased selection:bg-accent selection:text-white">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 bg-clay-50/85 backdrop-blur-md border-b border-clay-200">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-serif text-xl tracking-tight font-medium hover:text-accent transition-colors">
+        Daniel Candamil<span class="text-accent">.</span>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-clay-600">
+        <a href="#about" class="hover:text-clay-900 transition-colors">About</a>
+        <a href="#skills" class="hover:text-clay-900 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-clay-900 transition-colors">Projects</a>
+        <a href="#experience" class="hover:text-clay-900 transition-colors">Experience</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="mailto:dac24094@uga.edu" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-clay-900 text-clay-50 hover:bg-accent transition-colors shadow-sm">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+          <span>Get in Touch</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="max-w-5xl mx-auto px-6 pt-16 pb-20">
+    <section id="about" class="space-y-6 max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-accent-soft text-accent border border-accent/20">
+        <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+        Mechanical Engineering &bull; University of Georgia '27
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl font-serif font-normal text-clay-900 tracking-tight leading-[1.15]">
+        Bridging mechanical CAD definition, thermal systems, and experimental biomechanics.
+      </h1>
+
+      <p class="text-lg text-clay-600 leading-relaxed font-normal">
+        I am a mechanical engineering student specializing in CAD envelope definition, GD&T manufacturing controls, HVAC infrastructure, and experimental fluid-structure characterization. Experienced in power generation assemblies at <strong>GE Vernova</strong>, commercial MEP design at <strong>Newcomb & Boyd</strong>, and compliant biomechanical simulator development at <strong>UGA</strong>.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="https://linkedin.com/in/danielcandamil/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-medium text-clay-800 hover:text-accent transition-colors">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+          <span>LinkedIn</span>
+        </a>
+        <span class="text-clay-300">&bull;</span>
+        <a href="mailto:dac24094@uga.edu" class="inline-flex items-center gap-2 text-sm font-medium text-clay-800 hover:text-accent transition-colors">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>dac24094@uga.edu</span>
+        </a>
+        <span class="text-clay-300">&bull;</span>
+        <span class="inline-flex items-center gap-2 text-sm text-clay-600">
+          <i data-lucide="map-pin" class="w-4 h-4"></i>
+          <span>Athens, GA</span>
+        </span>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="mt-24 pt-10 border-t border-clay-200">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="text-xs font-mono text-accent uppercase tracking-widest">Capabilities</span>
+          <h2 class="text-2xl font-serif font-normal text-clay-900 mt-1">Technical Stack & Domain Knowledge</h2>
+        </div>
+        <p class="text-xs font-mono text-clay-600">Mechanical, thermal, computational & testing</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Mechanical & CAD -->
+        <div class="p-6 rounded-2xl bg-white border border-clay-200 shadow-sm hover:border-clay-300 transition-all">
+          <div class="w-9 h-9 rounded-lg bg-accent-soft flex items-center justify-center text-accent mb-4">
+            <i data-lucide="box" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-serif text-lg font-medium text-clay-900 mb-2">CAD & Prototyping</h3>
+          <p class="text-xs text-clay-600 mb-4 leading-relaxed">Precision geometric dimensioning, solid-body mesh booleaning, boundary envelopes, and elastomeric FDM.</p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge">Siemens NX</span>
+            <span class="badge">Revit</span>
+            <span class="badge">AutoCAD</span>
+            <span class="badge">SolidWorks</span>
+            <span class="badge">Meshmixer</span>
+            <span class="badge">GD&T (ASME Y14.5)</span>
+          </div>
+        </div>
+
+        <!-- PLM & Thermal/Fluid Analysis -->
+        <div class="p-6 rounded-2xl bg-white border border-clay-200 shadow-sm hover:border-clay-300 transition-all">
+          <div class="w-9 h-9 rounded-lg bg-accent-soft flex items-center justify-center text-accent mb-4">
+            <i data-lucide="cpu" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-serif text-lg font-medium text-clay-900 mb-2">Fluid & Thermal Systems</h3>
+          <p class="text-xs text-clay-600 mb-4 leading-relaxed">Thermodynamic energy sizing, psychrometrics, closed fluid loops, check-valve actuation, and ENOVIA PLM.</p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge">ENOVIA PLM</span>
+            <span class="badge">Trane TRACE</span>
+            <span class="badge">Fluid Mechanics</span>
+            <span class="badge">Psychrometrics</span>
+            <span class="badge">Hydraulics</span>
+            <span class="badge">Bluebeam Revu</span>
+          </div>
+        </div>
+
+        <!-- Programming & Data -->
+        <div class="p-6 rounded-2xl bg-white border border-clay-200 shadow-sm hover:border-clay-300 transition-all">
+          <div class="w-9 h-9 rounded-lg bg-accent-soft flex items-center justify-center text-accent mb-4">
+            <i data-lucide="activity" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-serif text-lg font-medium text-clay-900 mb-2">Computational & Testing</h3>
+          <p class="text-xs text-clay-600 mb-4 leading-relaxed">Digital Image Correlation (DIC), hyper-elastic neo-Hookean modeling, scripting, and analytical reporting.</p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge">MATLAB (Ncorr DIC)</span>
+            <span class="badge">Python</span>
+            <span class="badge">SQL</span>
+            <span class="badge">Power BI</span>
+            <span class="badge">Neo-Hookean FEA</span>
+            <span class="badge">Excel Modeling</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mt-24 pt-10 border-t border-clay-200">
+      <div class="flex items-center justify-between mb-8">
+        <div>
+          <span class="text-xs font-mono text-accent uppercase tracking-widest">Case Studies</span>
+          <h2 class="text-2xl font-serif font-normal text-clay-900 mt-1">Featured Engineering Projects</h2>
+        </div>
+        <span class="text-xs text-clay-600 font-mono">Click card to open full case study</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Project 1: Biomechanical Heart Simulator (WITH REAL IMAGE PREVIEW) -->
+        <div onclick="openModal('heartModal')" class="group cursor-pointer rounded-2xl bg-white border border-clay-200 shadow-sm hover:shadow-md hover:border-accent/40 transition-all flex flex-col overflow-hidden">
+          
+          <div class="h-48 relative border-b border-clay-200 bg-clay-100 overflow-hidden">
+            <!-- Real photo of the speckled TPU prototype -->
+            <img 
+              src="heart-dic-speckle.jpg" 
+              alt="Physical 3D printed TPU heart with DIC speckle pattern during testing"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+              onerror="this.parentElement.innerHTML='<div class=\'schematic-grid h-full w-full flex items-center justify-center text-xs font-mono text-slate-400\'>[ Save photo as heart-dic-speckle.jpg ]</div>'"
+            />
+            <div class="absolute top-2.5 left-2.5 text-[9px] font-mono text-emerald-300 bg-slate-900/80 backdrop-blur-sm px-2 py-0.5 rounded border border-emerald-400/30">
+              PHYSICAL PROTOTYPE // DIC SPECKLED
+            </div>
+            <div class="absolute bottom-2 right-2.5 text-[9px] font-mono text-white/90 bg-slate-900/70 px-1.5 py-0.5 rounded">
+              SpiderFlex TPU 75A
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono text-clay-600 mb-2">
+                <span>UGA Research &bull; Biomechanics</span>
+                <span>Jan &ndash; May 2026</span>
+              </div>
+              <h3 class="text-lg font-serif font-medium text-clay-900 group-hover:text-accent transition-colors flex items-center justify-between">
+                <span>3D-Printed Compliant Cardiac Simulator</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              </h3>
+              <p class="mt-2.5 text-xs text-clay-600 leading-relaxed">
+                Modeled and printed a four-chamber compliant heart in SpiderFlex TPU 75A. Engineered a closed pulsatile loop with calibrated check valves and verified wall displacement via MATLAB Ncorr DIC.
+              </p>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-clay-100 flex flex-wrap gap-1.5 items-center">
+              <span class="badge">MATLAB (Ncorr)</span>
+              <span class="badge">SpiderFlex TPU</span>
+              <span class="badge">Neo-Hookean</span>
+              <span class="badge">Hydraulics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Duke Cayuga -->
+        <div onclick="openModal('cayugaModal')" class="group cursor-pointer rounded-2xl bg-white border border-clay-200 shadow-sm hover:shadow-md hover:border-accent/40 transition-all flex flex-col overflow-hidden">
+          
+          <div class="schematic-grid h-48 relative border-b border-clay-200 flex items-center justify-center overflow-hidden p-3">
+            <div class="absolute top-2.5 left-2.5 text-[9px] font-mono text-sky-300/80 bg-slate-900/70 px-2 py-0.5 rounded border border-sky-400/20">
+              SCHEMATIC // FIG-01: CAD BOUNDARY ENVELOPE
+            </div>
+            <div class="absolute bottom-2 right-2.5 text-[9px] font-mono text-slate-400">
+              REF: GT-VENT-8422 // ASME Y14.5
+            </div>
+
+            <svg class="w-full h-full max-h-36" viewBox="0 0 320 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="45" y="22" width="230" height="106" rx="4" stroke="#38bdf8" stroke-dasharray="4 4" stroke-width="1.2" stroke-opacity="0.7"/>
+              <path d="M45 22 L75 8 L305 8 L275 22" stroke="#38bdf8" stroke-dasharray="4 4" stroke-width="1.2" stroke-opacity="0.4"/>
+              <path d="M305 8 L305 114 L275 128" stroke="#38bdf8" stroke-dasharray="4 4" stroke-width="1.2" stroke-opacity="0.4"/>
+              
+              <ellipse cx="160" cy="75" rx="68" ry="42" stroke="#94a3b8" stroke-width="1.5"/>
+              <ellipse cx="160" cy="75" rx="18" ry="11" fill="#0f172a" stroke="#cbd5e1" stroke-width="1.5"/>
+              
+              <path d="M160 64 L160 33" stroke="#f97316" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M160 86 L160 117" stroke="#f97316" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M144 69 L104 52" stroke="#f97316" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M176 81 L216 98" stroke="#f97316" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M144 81 L104 98" stroke="#f97316" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M176 69 L216 52" stroke="#f97316" stroke-width="2.2" stroke-linecap="round"/>
+
+              <line x1="160" y1="138" x2="275" y2="138" stroke="#e2e8f0" stroke-width="0.8"/>
+              <text x="160" y="145" fill="#cbd5e1" font-size="7" font-family="JetBrains Mono" text-anchor="middle">BOUNDARY LIMIT (GD&T SPEC)</text>
+            </svg>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono text-clay-600 mb-2">
+                <span>GE Vernova &bull; Gas Turbine Skids</span>
+                <span>Jul &ndash; Aug 2026</span>
+              </div>
+              <h3 class="text-lg font-serif font-medium text-clay-900 group-hover:text-accent transition-colors flex items-center justify-between">
+                <span>Duke Cayuga Plant Boundary Envelope</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              </h3>
+              <p class="mt-2.5 text-xs text-clay-600 leading-relaxed">
+                Modeled 3D boundary constraints in Siemens NX to define maximum vendor manufacturing limits for a turbine ventilator fan, eliminating spatial interference across dense skid assemblies.
+              </p>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-clay-100 flex flex-wrap gap-1.5 items-center">
+              <span class="badge">Siemens NX</span>
+              <span class="badge">ENOVIA PLM</span>
+              <span class="badge">GD&T</span>
+              <span class="badge">Tolerance Stacks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: UAH Engineering Facility -->
+        <div onclick="openModal('uahModal')" class="group cursor-pointer rounded-2xl bg-white border border-clay-200 shadow-sm hover:shadow-md hover:border-accent/40 transition-all flex flex-col overflow-hidden">
+          
+          <div class="schematic-grid h-48 relative border-b border-clay-200 flex items-center justify-center overflow-hidden p-3">
+            <div class="absolute top-2.5 left-2.5 text-[9px] font-mono text-emerald-300/80 bg-slate-900/70 px-2 py-0.5 rounded border border-emerald-400/20">
+              SCHEMATIC // FIG-02: MEP AIR-DISTRIBUTION SYSTEM
+            </div>
+            <div class="absolute bottom-2 right-2.5 text-[9px] font-mono text-slate-400">
+              REF: AHU-04 / DUCT RUN CLASH-FREE
+            </div>
+
+            <svg class="w-full h-full max-h-36" viewBox="0 0 320 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="25" y="40" width="50" height="65" fill="#0f172a" stroke="#34d399" stroke-width="1.5"/>
+              <text x="50" y="73" fill="#34d399" font-size="8" font-family="JetBrains Mono" text-anchor="middle">AHU-04</text>
+
+              <path d="M75 60 L190 60 L190 35 L270 35" stroke="#38bdf8" stroke-width="8" stroke-linecap="square"/>
+              <path d="M190 60 L270 60" stroke="#38bdf8" stroke-width="6" stroke-linecap="square"/>
+              
+              <line x1="130" y1="60" x2="130" y2="100" stroke="#38bdf8" stroke-width="3.5"/>
+              <polygon points="123,100 137,100 130,112" fill="#38bdf8"/>
+              
+              <line x1="230" y1="60" x2="230" y2="100" stroke="#38bdf8" stroke-width="3.5"/>
+              <polygon points="223,100 237,100 230,112" fill="#38bdf8"/>
+
+              <path d="M25 120 L295 120" stroke="#fb923c" stroke-width="1.4" stroke-dasharray="5 3"/>
+              <text x="298" y="122" fill="#fb923c" font-size="7" font-family="JetBrains Mono">CHW-R</text>
+            </svg>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono text-clay-600 mb-2">
+                <span>Newcomb & Boyd &bull; Higher Ed MEP</span>
+                <span>May 2024 &ndash; Aug 2025</span>
+              </div>
+              <h3 class="text-lg font-serif font-medium text-clay-900 group-hover:text-accent transition-colors flex items-center justify-between">
+                <span>UAH Engineering Facility HVAC Infrastructure</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              </h3>
+              <p class="mt-2.5 text-xs text-clay-600 leading-relaxed">
+                Coordinated multistory air distribution layouts in Autodesk Revit, balancing psychrometric loads in Excel and managing clash coordination across plumbing and electrical models.
+              </p>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-clay-100 flex flex-wrap gap-1.5 items-center">
+              <span class="badge">Autodesk Revit</span>
+              <span class="badge">Excel Load Sizing</span>
+              <span class="badge">Bluebeam Revu</span>
+              <span class="badge">ASHRAE Codes</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Professional Experience Timeline -->
+    <section id="experience" class="mt-24 pt-10 border-t border-clay-200">
+      <div class="mb-8">
+        <span class="text-xs font-mono text-accent uppercase tracking-widest">Career History</span>
+        <h2 class="text-2xl font-serif font-normal text-clay-900 mt-1">Professional Experience</h2>
+      </div>
+
+      <div class="space-y-4">
+        <!-- GE Vernova -->
+        <div class="border border-clay-200 rounded-2xl bg-white p-6 shadow-sm">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+            <div>
+              <h3 class="text-lg font-serif font-medium text-clay-900">Product Definition Engineering Intern</h3>
+              <p class="text-sm font-medium text-accent">GE Vernova &bull; Greenville, SC</p>
+            </div>
+            <span class="text-xs font-mono text-clay-600">May 2026 &ndash; Aug 2026</span>
+          </div>
+
+          <ul class="mt-4 space-y-2.5 text-sm text-clay-600 list-disc list-outside pl-5 leading-relaxed">
+            <li>Executed multi-level spatial interference and clearance analyses on large-scale turbine assemblies, isolating spatial conflicts to prevent manufacturing rework.</li>
+            <li>Managed end-to-end Change Action workflows inside ENOVIA PLM, ensuring complete engineering integrity and obtaining senior leadership approval.</li>
+            <li>Developed precision 3D CAD parts and sub-assemblies conforming strictly to Geometric Dimensioning and Tolerancing (GD&T) principles.</li>
+            <li>Participated in formal design reviews, providing analytical geometry data and drawing revisions to expedite technical release.</li>
+          </ul>
+        </div>
+
+        <!-- Newcomb & Boyd -->
+        <div class="border border-clay-200 rounded-2xl bg-white p-6 shadow-sm">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+            <div>
+              <h3 class="text-lg font-serif font-medium text-clay-900">HVAC Design Engineer Co-op</h3>
+              <p class="text-sm font-medium text-accent">Newcomb & Boyd &bull; Atlanta, GA</p>
+            </div>
+            <span class="text-xs font-mono text-clay-600">May 2024 &ndash; Aug 2025</span>
+          </div>
+
+          <ul class="mt-4 space-y-2.5 text-sm text-clay-600 list-disc list-outside pl-5 leading-relaxed">
+            <li>Engineered heating, ventilation, and air conditioning systems for higher education, healthcare, and commercial facilities focusing on occupant comfort and energy efficiency.</li>
+            <li>Constructed detailed 3D ductwork and mechanical equipment configurations inside Autodesk Revit, navigating tight plenum heights and architectural boundaries.</li>
+            <li>Conducted thermodynamic calculations and psychrometric analyses in Excel to size airflow equipment and verify peak thermal load demands.</li>
+            <li>Collaborated across disciplines with plumbing and electrical engineering teams to eliminate design interferences and generate coordinated construction document sets.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Communication -->
+    <section class="mt-24 pt-10 border-t border-clay-200">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <span class="text-xs font-mono text-accent uppercase tracking-widest">Academic Background</span>
+          <h2 class="text-xl font-serif font-normal text-clay-900 mt-1 mb-4">Education</h2>
+          <div class="p-6 rounded-2xl bg-white border border-clay-200">
+            <h3 class="font-serif font-medium text-clay-900 text-lg">The University of Georgia</h3>
+            <p class="text-sm text-accent font-medium mt-0.5">Bachelor of Science in Mechanical Engineering</p>
+            <p class="text-xs font-mono text-clay-600 mt-2">Athens, GA &bull; Aug 2022 &ndash; May 2027</p>
+            <div class="mt-4 pt-4 border-t border-clay-100 flex flex-wrap gap-2">
+              <span class="badge text-xs">ASME Member</span>
+              <span class="badge text-xs">Corazon Consiente UGA (Event Leader)</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="text-xs font-mono text-accent uppercase tracking-widest">Communication</span>
+          <h2 class="text-xl font-serif font-normal text-clay-900 mt-1 mb-4">Languages</h2>
+          <div class="p-6 rounded-2xl bg-white border border-clay-200 space-y-4">
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span class="font-medium text-clay-900">English</span>
+                <span class="text-xs font-mono text-clay-600">Native / Fluent</span>
+              </div>
+              <div class="w-full bg-clay-100 rounded-full h-1.5">
+                <div class="bg-accent h-1.5 rounded-full w-full"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span class="font-medium text-clay-900">Spanish</span>
+                <span class="text-xs font-mono text-clay-600">Native / Fluent</span>
+              </div>
+              <div class="w-full bg-clay-100 rounded-full h-1.5">
+                <div class="bg-accent h-1.5 rounded-full w-full"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span class="font-medium text-clay-900">Portuguese</span>
+                <span class="text-xs font-mono text-clay-600">Limited Working Proficiency</span>
+              </div>
+              <div class="w-full bg-clay-100 rounded-full h-1.5">
+                <div class="bg-accent h-1.5 rounded-full w-[70%]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-28 pt-8 border-t border-clay-200 flex flex-col sm:flex-row items-center justify-between text-xs text-clay-600 font-mono gap-4">
+      <p>&copy; 2026 Daniel Candamil. Proprietary engineering portfolio.</p>
+      <div class="flex gap-4">
+        <a href="#about" class="hover:text-clay-900">Back to Top &uarr;</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Interactive Project Modal 1: Biomechanical Heart Simulator (WITH BOTH REAL PHOTOS) -->
+  <div id="heartModal" class="fixed inset-0 z-50 hidden bg-clay-900/50 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-clay-50 max-w-3xl w-full rounded-2xl border border-clay-300 shadow-2xl overflow-hidden p-6 sm:p-8 animate-in fade-in zoom-in duration-200 max-h-[92vh] overflow-y-auto">
+      <div class="flex items-start justify-between border-b border-clay-200 pb-4">
+        <div>
+          <span class="text-xs font-mono text-accent uppercase">Case Study // Biomechanical Additive Manufacturing & DIC</span>
+          <h3 class="text-2xl font-serif text-clay-900 mt-1">Biomimetic 3D-Printed Heart Simulator</h3>
+        </div>
+        <button onclick="closeModal('heartModal')" class="text-clay-600 hover:text-clay-900 p-1">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Photo Gallery Inside Modal -->
+      <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-white rounded-xl border border-clay-200 overflow-hidden shadow-sm">
+          <img 
+            src="heart-dic-speckle.jpg" 
+            alt="3D printed heart model with applied DIC speckle pattern and port adapters" 
+            class="w-full h-44 object-cover object-center"
+            onerror="this.parentElement.innerHTML='<div class=\'h-44 flex items-center justify-center text-xs font-mono text-clay-600 p-4\'>[ Save as heart-dic-speckle.jpg ]</div>'"
+          />
+          <div class="p-2.5 bg-clay-50 border-t border-clay-200">
+            <p class="text-[11px] font-mono text-clay-800 font-medium">Fig 1: DIC Speckle Pattern & Port Clamps</p>
+            <p class="text-[10px] text-clay-600">High-contrast surface dot distribution prepared for Ncorr strain tracking.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl border border-clay-200 overflow-hidden shadow-sm">
+          <img 
+            src="heart-pump-rig.jpg" 
+            alt="Full benchtop hydraulic closed loop with diaphragm pump and pressure regulator" 
+            class="w-full h-44 object-cover object-center"
+            onerror="this.parentElement.innerHTML='<div class=\'h-44 flex items-center justify-center text-xs font-mono text-clay-600 p-4\'>[ Save as heart-pump-rig.jpg ]</div>'"
+          />
+          <div class="p-2.5 bg-clay-50 border-t border-clay-200">
+            <p class="text-[11px] font-mono text-clay-800 font-medium">Fig 2: Closed Hydraulic Test Loop</p>
+            <p class="text-[10px] text-clay-600">Diaphragm pump, inline flow meter, relief valve, and check-valve assembly.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 space-y-4 text-sm text-clay-800 leading-relaxed">
+        <p><strong>The Challenge:</strong> Develop a compliant, 3D-printed cardiac model capable of repeatable expansion and contraction under cyclic hydraulic pressure without experiencing layer-line delamination, fatigue creep, or seam leakage at rigid-to-soft tubing interfaces.</p>
+        
+        <p><strong>Technical Execution & Daniel's Contributions:</strong></p>
+        <ul class="list-disc list-inside space-y-1.5 pl-2 text-clay-600">
+          <li><strong>Fluid System Review & Working Fluid Staging:</strong> Sized a closed hydraulic loop converting continuous diaphragm pump flow into a pulsatile waveform using dual inline check valves (0.5 PSI and 2.24 PSI cracking thresholds) and an inline 50 PSI bronze safety relief valve. Staged fluids from water to a blood-analog 40% glycerol / 60% water mixture (&approx;3.5&ndash;4.5 cP).</li>
+          <li><strong>Theoretical Expansion Modeling:</strong> Compared linear thin-walled pressure vessel models against non-linear neo-Hookean hyper-elastic equations ($P_{nonlinear} \approx \frac{0.404tE}{r}$), predicting &approx;46&ndash;47 psi required to achieve 20% radial strain on the TPU shell.</li>
+          <li><strong>Digital Image Correlation (DIC) Strain Validation:</strong> Speckled the elastomeric outer surface and performed non-contact full-field 2D strain analysis in MATLAB using the Ncorr DIC engine.</li>
+          <li><strong>Quantitative Results:</strong> Verified peak in-plane normal strains of $E_{xx} = 5.12\%$ and $E_{yy} = 5.14\%$ with a peak horizontal displacement of 0.1309 in and vertical displacement of -0.2858 in, proving non-rigid, true elastic compliance during dynamic pump cycling.</li>
+          <li><strong>Manufacturing Architecture:</strong> Authored recommendations to transition from direct FDM TPU printing to a sacrificial 3D-printed mold for homogeneous silicone casting to eliminate anisotropic layer-line failure points.</li>
+        </ul>
+
+        <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200/80 text-xs text-emerald-900 font-mono">
+          <i data-lucide="check-circle" class="w-3.5 h-3.5 inline mr-1 text-emerald-700"></i>
+          Key Metrics: 5.14% Peak Strain (Ncorr DIC) &bull; SpiderFlex TPU 75A &bull; 19.8mm Standardized Ports &bull; 130 PSI Loop
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-clay-200 flex justify-end">
+        <button onclick="closeModal('heartModal')" class="px-4 py-1.5 bg-clay-900 text-white rounded-full text-xs font-medium hover:bg-accent transition-colors">
+          Close Case Study
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Project Modal 2: Duke Cayuga -->
+  <div id="cayugaModal" class="fixed inset-0 z-50 hidden bg-clay-900/50 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-clay-50 max-w-2xl w-full rounded-2xl border border-clay-300 shadow-2xl overflow-hidden p-6 sm:p-8 animate-in fade-in zoom-in duration-200 max-h-[90vh] overflow-y-auto">
+      <div class="flex items-start justify-between border-b border-clay-200 pb-4">
+        <div>
+          <span class="text-xs font-mono text-accent uppercase">Case Study // CAD Definition</span>
+          <h3 class="text-2xl font-serif text-clay-900 mt-1">Duke Cayuga Power Plant Boundary Envelope</h3>
+        </div>
+        <button onclick="closeModal('cayugaModal')" class="text-clay-600 hover:text-clay-900 p-1">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="mt-5 space-y-4 text-sm text-clay-800 leading-relaxed">
+        <p><strong>Engineering Challenge:</strong> Gas turbine auxiliary skids operate under high physical density with strictly regulated thermal expansion margins and service access paths. A replacement ventilator fan required a verified spatial envelope prior to contracting external vendor fabrication.</p>
+        
+        <p><strong>Technical Execution:</strong></p>
+        <ul class="list-disc list-inside space-y-1.5 pl-2 text-clay-600">
+          <li>Constructed a volumetric 3D keep-in boundary envelope within <strong>Siemens NX</strong> incorporating operating tolerances and thermal growth buffers.</li>
+          <li>Authored manufacturing drawings utilizing comprehensive <strong>GD&T</strong> datum reference frames, giving the external vendor exact dimensional thresholds.</li>
+          <li>Cross-examined the envelope against surrounding structural steel and mechanical systems to confirm 100% clash-free integration.</li>
+          <li>Packaged the CAD geometry and technical package into an <strong>ENOVIA PLM</strong> Change Action, securing formal engineering sign-off for release into the production environment.</li>
+        </ul>
+
+        <div class="p-3 bg-amber-50 rounded-xl border border-amber-200/80 text-xs text-amber-900 font-mono">
+          <i data-lucide="shield-alert" class="w-3.5 h-3.5 inline mr-1 text-amber-700"></i>
+          NOTE: Direct CAD geometry and plant imagery are withheld in compliance with non-disclosure and intellectual property agreements.
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-clay-200 flex justify-end">
+        <button onclick="closeModal('cayugaModal')" class="px-4 py-1.5 bg-clay-900 text-white rounded-full text-xs font-medium hover:bg-accent transition-colors">
+          Close Case Study
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Project Modal 3: UAH Engineering Facility -->
+  <div id="uahModal" class="fixed inset-0 z-50 hidden bg-clay-900/50 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-clay-50 max-w-2xl w-full rounded-2xl border border-clay-300 shadow-2xl overflow-hidden p-6 sm:p-8 animate-in fade-in zoom-in duration-200 max-h-[90vh] overflow-y-auto">
+      <div class="flex items-start justify-between border-b border-clay-200 pb-4">
+        <div>
+          <span class="text-xs font-mono text-accent uppercase">Case Study // MEP Systems</span>
+          <h3 class="text-2xl font-serif text-clay-900 mt-1">UAH Engineering Building HVAC System</h3>
+        </div>
+        <button onclick="closeModal('uahModal')" class="text-clay-600 hover:text-clay-900 p-1">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="mt-5 space-y-4 text-sm text-clay-800 leading-relaxed">
+        <p><strong>Engineering Challenge:</strong> Modern academic engineering facilities host diverse space conditioning needs—from high-load computational laboratories to variable-occupancy lecture halls—requiring strict airflow balancing, acoustic attenuation, and compact plenum routing.</p>
+        
+        <p><strong>Technical Execution:</strong></p>
+        <ul class="list-disc list-inside space-y-1.5 pl-2 text-clay-600">
+          <li>Constructed complete 3D mechanical duct distribution networks and equipment families in <strong>Autodesk Revit</strong>.</li>
+          <li>Resolved spatial collisions with structural beams and plumbing chases during multidisciplinary BIM coordination sessions.</li>
+          <li>Calculated peak thermodynamic sensible/latent cooling loads and psychrometric state points in Excel to size airflow parameters (CFM) and terminal boxes.</li>
+          <li>Performed internal QA/QC evaluations on contract drawing sets using <strong>Bluebeam Revu</strong> to ensure compliance with ASHRAE 90.1, ASHRAE 62.1, and local building codes.</li>
+        </ul>
+
+        <div class="p-3 bg-amber-50 rounded-xl border border-amber-200/80 text-xs text-amber-900 font-mono">
+          <i data-lucide="shield-alert" class="w-3.5 h-3.5 inline mr-1 text-amber-700"></i>
+          NOTE: MEP construction schematics shown are representative functional diagrams created for portfolio demonstration.
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-clay-200 flex justify-end">
+        <button onclick="closeModal('uahModal')" class="px-4 py-1.5 bg-clay-900 text-white rounded-full text-xs font-medium hover:bg-accent transition-colors">
+          Close Case Study
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Modal controls
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    // Dismiss modal on backdrop click or Escape key
+    window.addEventListener('click', (e) => {
+      if (e.target.classList.contains('backdrop-blur-sm')) {
+        e.target.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('[id$="Modal"]').forEach(modal => {
+          modal.classList.add('hidden');
+        });
+        document.body.style.overflow = 'auto';
+      }
+    });
+  </script>
+</body>
+</html>
